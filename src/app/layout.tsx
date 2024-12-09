@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { Libre_Baskerville, Raleway } from "next/font/google";
 import "./globals.css";
 
-const libre_Baskerville = Libre_Baskerville({ weight: "700", subsets: ["latin"] });
+const libre_Baskerville = Libre_Baskerville({ weight: "400", subsets: ["latin"], variable: "--baskerville" });
 
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"], variable: "--raleway" });
 
 export const metadata: Metadata = {
   title: "DXB Project",
@@ -13,13 +13,18 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  header,
   children,
 }: Readonly<{
   children: React.ReactNode;
+  header: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${libre_Baskerville.className} ${raleway.className} antialiased`}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${libre_Baskerville.variable} ${raleway.variable} antialiased`}>
+        {header}
+        {children}
+      </body>
     </html>
   );
 }

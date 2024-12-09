@@ -35,3 +35,8 @@ Store globally shared application code in the root `src` directory and splits mo
 -- `app` Routing logic
 -- `lib` utils, hooks, helpers etc.
 -- `assets` images, logos, icons
+
+<!-- WIP Tags -->
+
+`#OPTIONAL_CONTENT` - Optional content
+`#PLACEHOLDER` - content placeholder to address
