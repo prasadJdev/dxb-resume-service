@@ -177,7 +177,7 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
         variant={variant}
         size={size}
         className={cn(
-          "absolute  h-8 w-8 rounded-full hover:border-primary active:border-primary",
+          "absolute  h-8 w-8 rounded-full hover:border-secondary active:border-secondary",
           orientation === "horizontal"
             ? "-left-12 top-1/2 -translate-y-1/2"
             : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -187,7 +187,7 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
         onClick={scrollPrev}
         {...props}
       >
-        <ArrowLeft className="h-4 w-4 text-primary" />
+        <ArrowLeft className="h-4 w-4 text-secondary" />
         <span className="sr-only">Previous slide</span>
       </Button>
     );
@@ -205,7 +205,7 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
         variant={variant}
         size={size}
         className={cn(
-          "absolute h-8 w-8 rounded-full hover:border-primary active:border-primary",
+          "absolute h-8 w-8 rounded-full hover:border-secondary active:border-secondary",
           orientation === "horizontal"
             ? "-right-12 top-1/2 -translate-y-1/2"
             : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -215,7 +215,7 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<ty
         onClick={scrollNext}
         {...props}
       >
-        <ArrowRight className="h-4 w-4 text-primary" />
+        <ArrowRight className="h-4 w-4 text-secondary" />
         <span className="sr-only">Next slide</span>
       </Button>
     );

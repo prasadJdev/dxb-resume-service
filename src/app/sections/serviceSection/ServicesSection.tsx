@@ -53,7 +53,7 @@ const cvSolutions = [
 
 function ServicesSection() {
   return (
-    <section id="services" className=" px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 py-12 sm:py-8 md:py-12">
+    <section id="services" className=" px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 py-12 sm:py-8 md:py-12 ">
       <h2 className="text-4xl mb-[6rem] font-bold text-center font-secondary text-primary">Our Services</h2>
       <div className="flex flex-wrap gap-12 items-center justify-center mt-12 mx-auto isolate">
         <div className="transition duration-500 max-w-80 lg:translate-y-8 ease-in-out hover:bg-primaryContrast bg-primary/5 cursor-pointer ring-[#ffffff1a] hover:ring-primary ring-1 p-8 rounded-3xl text-primary">
@@ -74,7 +74,7 @@ function ServicesSection() {
             ))}
 
             <div className="relative inset-0 mt-4 flex items-center justify-center">
-              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-gray-700">
+              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-secondary">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -98,7 +98,7 @@ function ServicesSection() {
             ))}
 
             <div className="relative inset-0 mt-4 flex items-center justify-center">
-              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-gray-700">
+              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-secondary">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -122,7 +122,7 @@ function ServicesSection() {
             ))}
 
             <div className="relative inset-0 mt-4 flex items-center justify-center">
-              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-gray-700">
+              <a href="#" className="text-sm font-semibold leading-6 group-hover:underline  text-secondary">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
