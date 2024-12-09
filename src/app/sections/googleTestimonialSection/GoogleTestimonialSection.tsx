@@ -97,7 +97,7 @@ function GoogleTestimonialSection() {
       <Carousel className="md:ml-8" opts={{ loop: true }}>
         <CarouselContent>
           {reviews.map((review) => (
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={review.id} className="md:basis-1/2 lg:basis-1/3">
               <div key={review.id} className="flex flex-col gap-4 border border-[#d9d9d9] p-8 rounded-xl">
                 <div className="relative min-w-12 w-12 h-12 rounded-full overflow-hidden">
                   <Image fill src={review.image} alt={review.name} />

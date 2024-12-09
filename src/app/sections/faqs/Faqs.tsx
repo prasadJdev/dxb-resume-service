@@ -35,9 +35,9 @@ const faqs = [
     title: "I need my CV in an emergency",
     description: (
       <p>
-        If you require your CV on an <strong>urgent basis</strong>, we've got you covered! Simply pay an additional
-        <strong>30 AED</strong> on top of the CV package cost, and we'll deliver your professionally crafted CV within{" "}
-        <strong>3-5 hours</strong>.
+        If you require your CV on an <strong>urgent basis</strong>, we&apos;ve got you covered! Simply pay an additional
+        <strong>30 AED</strong> on top of the CV package cost, and we&apos;ll deliver your professionally crafted CV
+        within <strong>3-5 hours</strong>.
       </p>
     ),
   },
@@ -74,7 +74,7 @@ function Faqs() {
       id="faqs"
       className="px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 py-12 sm:py-8 md:py-12 xl:py-12 container max-w-4xl w-full mx-auto"
     >
-      <h2 className="text-5xl mb-8 font-bold text-center font-secondary">FAQ's</h2>
+      <h2 className="text-5xl mb-8 font-bold text-center font-secondary">FAQ&apos;s</h2>
 
       <div className="container max-w-3xl w-full mx-auto flex flex-col gap-6">
         {faqs.map((faq) => (

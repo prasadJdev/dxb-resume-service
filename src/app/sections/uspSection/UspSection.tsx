@@ -86,23 +86,23 @@ function UspSection() {
       className="max-w-7xl mx-auto  px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 sm:py-8 md:py-12 xl:py-18 "
     >
       <div className="grid grid-cols-3 shadow-xl border-2 border-[#EFC788] bg-goldBg rounded-lg">
-        <div className="p-8 flex gap-3 border-r-2 border-[#EFC788]">
+        <div className="p-8 flex items-center gap-3 border-r-2 border-[#EFC788]">
           <CVFileIcon />
           <p className="text-base font-primary font-semibold text-primary">Obtain a sample file within hours</p>
         </div>
-        <div className="p-8 flex gap-3 border-r-2 border-[#EFC788] border-b-2">
+        <div className="p-8 flex items-center gap-3 border-r-2 border-[#EFC788] border-b-2">
           <UnlimitedEdits />
           <p className="text-base font-primary font-semibold text-primary">Unlimited editng before finalization</p>
         </div>
-        <div className="p-8 flex gap-3 border-b-2 border-[#EFC788]">
+        <div className="p-8 flex items-center gap-3 border-b-2 border-[#EFC788]">
           <OneOnOneIcon />
           <p className="text-base font-primary font-semibold text-primary">One-on-one consultation</p>
         </div>
-        <div className="p-8 flex gap-3 border-t-2 border-r-2 border-[#EFC788]">
+        <div className="p-8 flex items-center gap-3 border-t-2 border-r-2 border-[#EFC788]">
           <BudgetFriedlyIcon />
           <p className="text-base font-primary font-semibold text-primary">Budget friendly offers</p>
         </div>
-        <div className="p-8 flex gap-3 border-r-2 border-[#EFC788]">
+        <div className="p-8 flex items-center gap-3 border-r-2 border-[#EFC788]">
           <EmergencyCVIcon />
           <p className="text-base font-primary font-semibold text-primary">
             Emergency services - Receive your ATS CV within 3 hours
@@ -111,7 +111,7 @@ function UspSection() {
             </a>
           </p>
         </div>
-        <div className="p-8 flex gap-3">
+        <div className="p-8 flex items-center gap-3">
           <AtsScanIcon />
           <p className="text-base font-primary font-semibold text-primary">Application Tracking System Friendly</p>
         </div>

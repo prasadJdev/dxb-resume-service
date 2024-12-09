@@ -108,7 +108,7 @@ function ServicesSection() {
         <div className="transition duration-500 max-w-80 lg:translate-y-8 ease-in-out hover:bg-primaryContrast bg-primary/5 cursor-pointer ring-[#ffffff1a] hover:ring-primary ring-1 p-8 rounded-3xl text-primary">
           <div className="text-xl font-medium text-primary">CV Distribution</div>
           <p className="my-4 text-sm text-gray-500">
-            We'll send your resume to top companies in your industry, increasing your chances of landing the job.
+            We&apos;ll send your resume to top companies in your industry, increasing your chances of landing the job.
           </p>
 
           <div className="overflow-hidden rounded-lg relative">
