@@ -11,11 +11,11 @@ function About() {
         <h2 className="text-7xl font-secondary font-semibold leading-relaxed text-tertiary">Shikha</h2>
 
         <p className="text-xl font-primary mb-8">
-          For over <strong>6+ years</strong>, I've been helping professionals stand out with optimized resumes, LinkedIn
-          profiles, and global CV distribution. What started as a passion to help others has grown into a mission to
-          open doors to career success. <br />
+          For over <strong>6+ years</strong>, I&apos;ve been helping professionals stand out with optimized resumes,
+          LinkedIn profiles, and global CV distribution. What started as a passion to help others has grown into a
+          mission to open doors to career success. <br />
           <br />
-          <span>Let's work together to take your career to the next level!</span>
+          <span>Let&apos;s work together to take your career to the next level!</span>
         </p>
 
         <div className="flex flex-col md:flex-row gap-8">
