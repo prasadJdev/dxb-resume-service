@@ -1,3 +1,4 @@
+import About from "./sections/about/About";
 import AdvertismentBanner from "./sections/advertismentBanner/AdvertismentBanner";
 import Faqs from "./sections/faqs/Faqs";
 import GoogleTestimonialSection from "./sections/googleTestimonialSection/GoogleTestimonialSection";
@@ -15,7 +16,7 @@ export default function Home() {
       <ServicesSection />
       <ServiceDeliveryMethod />
 
-      {/* About */}
+      <About />
       {/* Pricing */}
       <Faqs />
       <AdvertismentBanner />

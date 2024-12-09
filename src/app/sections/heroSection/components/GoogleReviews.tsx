@@ -96,61 +96,16 @@ const reviews: Review[] = [
 
 const GoogleBadge = () => {
   return (
-    <div className="inline-block shadow-[0_2px_5px_0_rgba(0,0,0,0.26)] bg-white hover:bg-white/23 rounded-md">
-      <div className="border-[3px] border-[#4fce6a] rounded-[2px_2px_0_0]" />
+    <div className="flex items-center gap-1 p-2 md:p-[10px] border-t-4 border-[#4fce6a] shadow-[0_2px_5px_0_rgba(0,0,0,0.26)] bg-white hover:bg-white/23 rounded-md">
+      <GooogleLogo className="align-middle w-5 h-5" />
 
-      <div className="flex items-start p-[10px] rounded-[2px]">
-        <GooogleLogo className="align-middle" />
+      <div className="inline-block m-[0_0_0_4px] align-middle">
+        <div className="text-[11px] md:text-sm text-left">Google Rating</div>
 
-        <div className="inline-block m-[0_0_0_4px] align-middle">
-          <div className="text-sm text-left">Google Rating</div>
+        <div className="flex gap-2 items-center">
+          <span className="text-[#e7711b] text-sm align-middle">5.0</span>
 
-          <div className="flex gap-2 items-center">
-            <span className="text-[#e7711b] text-[20px] m-[0_6px_0_0] align-middle">5.0</span>
-
-            <span className="flex gap-1">
-              <span className="wp-star">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                    fill="#e7711b"
-                  ></path>
-                </svg>
-              </span>
-              <span className="wp-star">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                    fill="#e7711b"
-                  ></path>
-                </svg>
-              </span>
-              <span className="wp-star">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                    fill="#e7711b"
-                  ></path>
-                </svg>
-              </span>
-              <span className="wp-star">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                    fill="#e7711b"
-                  ></path>
-                </svg>
-              </span>
-              <span className="wp-star">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                  <path
-                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                    fill="#e7711b"
-                  ></path>
-                </svg>
-              </span>
-            </span>
-          </div>
+          <StarRatings rating={5} size={12} className="text-[#e7711b] flex gap-1" />
         </div>
       </div>
     </div>
@@ -167,7 +122,7 @@ function GoogleReviews() {
         <div aria-hidden className="sr-only">
           <SheetTitle>Reviews</SheetTitle>
         </div>
-        <SheetHeader className="border-b  border-[#d9d9d9] p-[10px_16px] flex flex-row gap-2">
+        <SheetHeader className="border-b border-[#d9d9d9] p-[10px_16px] flex flex-row gap-2">
           <div className="flex items-center justify-center w-12 h-12 rounded-lg align-top border border-red-400">
             {/* LOGO */}
           </div>
@@ -178,48 +133,7 @@ function GoogleReviews() {
             <div className="flex gap-1 items-center">
               <span className="text-[#e7711b] text-sm font-bold m-[0_6px_0_0] align-middle">5.0</span>
 
-              <span className="flex gap-1">
-                <span className="wp-star">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                    <path
-                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                      fill="#e7711b"
-                    ></path>
-                  </svg>
-                </span>
-                <span className="wp-star">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                    <path
-                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                      fill="#e7711b"
-                    ></path>
-                  </svg>
-                </span>
-                <span className="wp-star">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                    <path
-                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                      fill="#e7711b"
-                    ></path>
-                  </svg>
-                </span>
-                <span className="wp-star">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                    <path
-                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                      fill="#e7711b"
-                    ></path>
-                  </svg>
-                </span>
-                <span className="wp-star">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="17" height="17" viewBox="0 0 1792 1792">
-                    <path
-                      d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
-                      fill="#e7711b"
-                    ></path>
-                  </svg>
-                </span>
-              </span>
+              <StarRatings rating={5} size={12} className="text-[#e7711b] flex gap-1" />
             </div>
           </div>
         </SheetHeader>
@@ -237,7 +151,7 @@ function GoogleReviews() {
 
                   <div className="flex items-center gap-2">
                     <StarRatings rating={review.rating} size={10} className="text-[#e7711b] flex gap-1" />
-                    {/* <p className="text-[#e7711b] text-xs">({review.rating})</p> */}
+                    <p className="text-[#e7711b] text-xs">({review.rating})</p>
                   </div>
                 </div>
 

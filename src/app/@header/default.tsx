@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 function Default() {
   return (
-    <header>
+    <header className="bg-primary">
       <CallAndChat />
       <Navbar />
     </header>

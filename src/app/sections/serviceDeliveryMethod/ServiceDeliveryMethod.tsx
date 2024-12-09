@@ -16,8 +16,8 @@ const Feature = ({
     <div
       className={cn(
         "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
-        (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
-        index < 4 && "lg:border-b dark:border-neutral-800"
+        (index === 0 || index === 3) && "lg:border-l dark:border-neutral-800",
+        index < 3 && "lg:border-b dark:border-neutral-800"
       )}
     >
       <div className="absolute top-6 right-6 text-7xl text-[#EBEBEB] font-extrabold group-hover:text-primary">
@@ -78,9 +78,9 @@ function ServiceDeliveryMethod() {
   return (
     <section
       id="service-delivery-method"
-      className="px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 py-12 sm:py-8 md:py-12 xl:py-24 max-w-5xl mx-auto  px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 sm:py-8 md:py-12 xl:py-24"
+      className="py-12 max-w-5xl mx-auto  px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 sm:py-8 md:py-12 xl:py-24"
     >
-      <h2 className="text-5xl mb-4 font-bold text-center font-secondary text-primary">Service Delivery Method</h2>
+      <h2 className="text-4xl mb-4 font-bold text-center font-secondary text-primary">Service Delivery Method</h2>
       <p className="text-lg mb-8 text-center text-primary font-primary">
         We are committed in supporting you every step of the way!
       </p>
