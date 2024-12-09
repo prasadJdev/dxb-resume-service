@@ -3,7 +3,7 @@ import AdvertismentBanner from "./sections/advertismentBanner/AdvertismentBanner
 import Faqs from "./sections/faqs/Faqs";
 import GoogleTestimonialSection from "./sections/googleTestimonialSection/GoogleTestimonialSection";
 import HeroSection from "./sections/heroSection/HeroSection";
-import Pricing from "./sections/pricing/Pricing";
+// import Pricing from "./sections/pricing/Pricing";
 import ServiceDeliveryMethod from "./sections/serviceDeliveryMethod/ServiceDeliveryMethod";
 import ServicesSection from "./sections/serviceSection/ServicesSection";
 import UspSection from "./sections/uspSection/UspSection";
