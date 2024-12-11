@@ -19,19 +19,22 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "ATS & Euro Pass CV | Cover letter",
+    title: "Resume building",
     href: "#",
-    description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    // description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    description: "",
   },
   {
     title: "Linkedln Optimization",
     href: "#",
-    description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    // description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    description: "",
   },
   {
-    title: "CV Distribution Globally",
+    title: "CV Distribution",
     href: "#",
-    description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    // description: "#OPTIONAL_CONTENT Some desciption that can be used",
+    description: "",
   },
 ];
 
@@ -113,8 +116,8 @@ const DesktopMenu = () => (
     <NavigationMenuList>
       <NavigationMenuItem>
         <NavigationMenuTrigger className="text-white">Services</NavigationMenuTrigger>
-        <NavigationMenuContent className="z-[500]">
-          <ul className="grid w-[400px] gap-3 p-4 grid-cols-1 z-[500]">
+        <NavigationMenuContent>
+          <ul className="grid w-56 gap-3 p-4 grid-cols-1 ">
             {components.map((component) => (
               <ListItem
                 className="hover:bg-primaryContrast rounded-sm"
@@ -130,8 +133,8 @@ const DesktopMenu = () => (
       </NavigationMenuItem>
 
       <NavigationMenuItem>
-        <Link href="#pricing" legacyBehavior passHref>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>Price</NavigationMenuLink>
+        <Link href="#" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>CV Score</NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
 
