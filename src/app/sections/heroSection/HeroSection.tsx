@@ -6,7 +6,6 @@ import { ChevronsRight } from "lucide-react";
 
 import { Typewriter } from "react-simple-typewriter";
 import GoogleReviews from "./components/GoogleReviews";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 function HeroSection() {
   return (
