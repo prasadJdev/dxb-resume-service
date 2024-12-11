@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 import Image from "next/image";
 
@@ -94,18 +96,22 @@ function GoogleTestimonialSection() {
         </div>
       </div>
 
-      <Carousel className="md:ml-8 md:max-w-3xl max-w-[-webkit-fill-available]" opts={{ loop: true }}>
+      <Carousel
+        className="md:ml-8 md:max-w-3xl max-w-[-webkit-fill-available]"
+        opts={{ loop: true }}
+        plugins={[Autoplay({ delay: 2000 })]}
+      >
         <CarouselContent>
           {reviews.map((review) => (
             <CarouselItem key={review.id} className="lg:basis-1/3 md:basis-1/2">
               <div key={review.id} className="flex flex-col gap-4 border border-[#d9d9d9] p-6 rounded-xl">
-                <div className="flex gap-2">
-                  <div className="relative min-w-12 w-12 h-12 rounded-full overflow-hidden">
+                <div className="flex gap-2 border-b border-[#EBEBEB] py-2">
+                  <div className="relative min-w-12 w-12 h-12 rounded-lg overflow-hidden">
                     <Image fill src={review.image} alt={review.name} />
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <h2 className="text-sm text-left text-primary font-primary font-semibold">{review.name}</h2>
+                    <h2 className="text-sm text-left text-secondary font-primary font-semibold">{review.name}</h2>
 
                     <div className="flex items-center gap-2">
                       <StarRatings rating={review.rating} size={10} className="text-[#e7711b] flex gap-1" />
@@ -115,7 +121,7 @@ function GoogleTestimonialSection() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  <p className="text-sm font-primary">{review.description}</p>
+                  <p className="text-sm font-primary text-primary">{review.description}</p>
                 </div>
               </div>
             </CarouselItem>

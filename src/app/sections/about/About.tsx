@@ -10,10 +10,10 @@ function About() {
         <h3 className="text-5xl font-secondary font-medium text-primary">Hi, I am</h3>
         <h2 className="text-7xl font-secondary font-semibold leading-relaxed text-tertiary">Shikha</h2>
 
-        <p className="text-xl font-primary mb-8">
-          For over <strong>6+ years</strong>, I&apos;ve been helping professionals stand out with optimized resumes,
-          LinkedIn profiles, and global CV distribution. What started as a passion to help others has grown into a
-          mission to open doors to career success. <br />
+        <p className="text-xl font-primary mb-8 text-primary font-medium">
+          For over <strong className="text-secondary text-xl">6+ years</strong>, I&apos;ve been helping professionals
+          stand out with optimized resumes, LinkedIn profiles, and global CV distribution. What started as a passion to
+          help others has grown into a mission to open doors to career success. <br />
           <br />
           <span>Let&apos;s work together to take your career to the next level!</span>
         </p>
@@ -21,17 +21,17 @@ function About() {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="border bg-goldBg rounded-md text-primary px-4 py-4 text-sm flex flex-col items-center gap-2 ">
             <h6 className="font-semibold font-secondary text-secondary text-xl">6 years</h6>
-            <p className="text-lg font-primary font-medium">Experienced</p>
+            <p className="text-lg font-primary font-semibold">Experienced</p>
           </div>
 
           <div className="border bg-goldBg rounded-md text-primary px-4 py-4 text-sm flex flex-col items-center gap-2 ">
             <h6 className="font-semibold font-secondary text-secondary text-xl">300+</h6>
-            <p className="text-lg font-primary font-medium">Social Media Family</p>
+            <p className="text-lg font-primary font-semibold">Social Media Family</p>
           </div>
 
           <div className="border bg-goldBg rounded-md text-primary px-4 py-4 text-sm flex flex-col items-center gap-2 ">
             <h6 className="font-semibold font-secondary text-secondary text-xl">4.5</h6>
-            <p className="text-lg font-primary font-medium">Star Reviews</p>
+            <p className="text-lg font-primary font-semibold">Star Reviews</p>
           </div>
         </div>
       </div>
