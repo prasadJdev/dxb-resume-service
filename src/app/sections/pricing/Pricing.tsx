@@ -95,7 +95,7 @@ function Pricing() {
             <CarouselItem id={offering.id} key={offering.id} className="md:basis-1/2 lg:basis-1/3 pl-2 md:pl-4">
               <div
                 className={cn(
-                  "flex flex-col gap-5 border border-[#d9d9d9] rounded-xl p-4 max-w-xs relative h-full",
+                  "flex flex-col justify-center gap-5 border border-[#d9d9d9] rounded-xl p-4 md:max-w-xs relative h-full",
                   offering.isRecommended && "bg-gray-100"
                 )}
               >
@@ -170,9 +170,9 @@ function Pricing() {
         </div>
       </Carousel>
 
-      <div className="border rounded-lg bg-secondary p-12 flex items-center justify-between w-full">
+      <div className="border rounded-lg bg-secondary md:p-12 p-4 flex flex-col gap-8 md:flex-row items-center justify-between w-full">
         <p className="text-white font-secondary text-2xl font-medium">
-          Get your CV within 3-5 hour in <strong className="font-bold text-4xl">100 AED</strong>
+          Get your CV within 3-5 hour in <strong className="font-bold lg:text-4xl text-xl">100 AED</strong>
         </p>
 
         <Button variant="outline1" className="text-secondary font-semibold">
