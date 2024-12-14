@@ -78,7 +78,7 @@ function GoogleTestimonialSection() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col md:flex-row gap-24 items-center justify-between max-w-7xl mx-auto  px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 sm:py-8 md:py-12 xl:py-24 overflow-hidden"
+      className="flex flex-col lg:flex-row gap-24 items-center justify-between max-w-7xl mx-auto  px-4 sm:px-12 p-4 sm:p-8 md:p-12 lg:p-16 sm:py-8 md:py-12 xl:py-24 overflow-hidden"
     >
       <div className="flex flex-col gap-3">
         <div className="flex items-center gap-3">

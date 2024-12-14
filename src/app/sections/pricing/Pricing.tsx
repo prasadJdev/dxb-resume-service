@@ -100,7 +100,7 @@ function Pricing() {
                 )}
               >
                 {offering.isRecommended && (
-                  <div className="absolute top-2 right-4 px-1 py-1 bg-secondary z-10 text-xs rounded-md text-white font-semibold">
+                  <div className="absolute top-2 right-4 px-1 py-1 bg-secondary z-10 text-[8px] rounded-sm text-white font-semibold">
                     Recommended
                   </div>
                 )}

@@ -57,8 +57,8 @@ function ServicesSection() {
       <h2 className="text-4xl mb-[6rem] font-bold text-center font-secondary text-primary">Our Services</h2>
       <div className="flex flex-wrap gap-12 items-center justify-center mt-12 mx-auto isolate">
         <div className="transition duration-500 max-w-80 lg:translate-y-8 ease-in-out hover:bg-primaryContrast bg-primary/5 cursor-pointer ring-[#ffffff1a] hover:ring-primary ring-1 p-8 rounded-3xl text-primary">
-          <div className="text-xl font-semibold text-primary font-primary text-center">ATS-Optimized Resumes</div>
-          <p className="my-4 text-sm text-gray-500 font-primary">
+          <div className="text-lg font-semibold text-primary font-secondary text-center">ATS-Optimized Resumes</div>
+          <p className="my-4 text-sm text-primary font-medium text-center font-primary">
             Ensure your resume gets noticed by employers and passes automated screenings. Europass CV: Perfect for
             European job applications, tailored to meet global standards
           </p>
@@ -66,10 +66,10 @@ function ServicesSection() {
           <div className="overflow-hidden rounded-lg relative">
             {atsSolutions.map((item) => (
               <div key={item.description} className="flex group items-start p-2 transition duration-150 ease-in-out">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center text-gray-500 sm:h-5 sm:w-5">
-                  <item.icon aria-hidden="true" />
+                <div className="flex h-5 w-5 shrink-0 items-center justify-center  sm:h-5 sm:w-5">
+                  <item.icon aria-hidden="true" className="text-secondary" />
                 </div>
-                <p className="ml-4 text-sm text-gray-500 font-primary">{item.description}</p>
+                <p className="ml-4 text-sm text-gray-500 font-primary font-medium">{item.description}</p>
               </div>
             ))}
 
@@ -82,18 +82,18 @@ function ServicesSection() {
         </div>
 
         <div className="transition duration-500 max-w-80 lg:-translate-y-8 ease-in-out hover:bg-primaryContrast bg-primary/5 cursor-pointer ring-[#ffffff1a] hover:ring-primary ring-1 p-8 rounded-3xl text-primary">
-          <div className="text-xl font-semibold text-primary font-primary text-center">LinkedIn Optimization</div>
-          <p className="my-4 text-sm text-gray-500 font-primary">
+          <div className="text-lg font-semibold text-primary font-secondary text-center">LinkedIn Optimization</div>
+          <p className="my-4 text-sm text-primary font-medium text-center font-primary">
             Boost your online presence with a profile that attracts recruiters and expands your network.
           </p>
 
           <div className="overflow-hidden rounded-lg relative">
             {linkdlnSolutions.map((item) => (
               <div key={item.description} className="flex group items-start p-2 transition duration-150 ease-in-out">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center text-gray-500 sm:h-5 sm:w-5">
-                  <item.icon aria-hidden="true" />
+                <div className="flex h-5 w-5 shrink-0 items-center justify-center  sm:h-5 sm:w-5">
+                  <item.icon aria-hidden="true" className="text-secondary" />
                 </div>
-                <p className="ml-4 text-sm text-gray-500 font-primary">{item.description}</p>
+                <p className="ml-4 text-sm text-gray-500 font-primary font-medium">{item.description}</p>
               </div>
             ))}
 
@@ -106,18 +106,18 @@ function ServicesSection() {
         </div>
 
         <div className="transition duration-500 max-w-80 lg:translate-y-8 ease-in-out hover:bg-primaryContrast bg-primary/5 cursor-pointer ring-[#ffffff1a] hover:ring-primary ring-1 p-8 rounded-3xl text-primary">
-          <div className="text-xl font-semibold text-primary font-primary text-center">CV Distribution</div>
-          <p className="my-4 text-sm text-gray-500 font-primary">
+          <div className="text-lg font-semibold text-primary font-secondary text-center">CV Distribution</div>
+          <p className="my-4 text-sm text-primary font-medium text-center font-primary">
             We&apos;ll send your resume to top companies in your industry, increasing your chances of landing the job.
           </p>
 
           <div className="overflow-hidden rounded-lg relative">
             {cvSolutions.map((item) => (
               <div key={item.description} className="flex group items-start p-2 transition duration-150 ease-in-out">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center text-gray-500 sm:h-5 sm:w-5">
-                  <item.icon aria-hidden="true" />
+                <div className="flex h-5 w-5 shrink-0 items-center justify-center  sm:h-5 sm:w-5">
+                  <item.icon className="text-secondary" aria-hidden="true" />
                 </div>
-                <p className="ml-4 text-sm text-gray-500 font-primary">{item.description}</p>
+                <p className="ml-4 text-sm text-gray-500 font-primary font-medium">{item.description}</p>
               </div>
             ))}
 
