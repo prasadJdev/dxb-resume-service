@@ -5,14 +5,7 @@ const onUpload = (file: File | Blob) => {
   const form = new FormData();
   form.set("file", file);
 
-  const promise = fetch("/admin/api/upload", {
-    method: "POST",
-    headers: {
-      // "content-type": file?.type || "application/octet-stream",
-      // "x-vercel-filename": file?.name || "image.png",
-    },
-    body: form,
-  });
+  const promise = fetch("/admin/api/upload", { method: "POST", body: form });
 
   return new Promise((resolve) => {
     toast.promise(
@@ -24,9 +17,8 @@ const onUpload = (file: File | Blob) => {
           // preload the image
           const image = new Image();
           image.src = url;
-          console.log(url);
+
           image.onload = () => {
-            console.log(url, "ONLOAD");
             resolve(url);
           };
           // No blob store configured
@@ -42,7 +34,7 @@ const onUpload = (file: File | Blob) => {
         loading: "Uploading image...",
         success: "Image uploaded successfully.",
         error: (e) => {
-          console.log(e.message);
+          console.log(e.message, "IMAGE_UPLOAD_ERROR");
           return e.message;
         },
       }

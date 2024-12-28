@@ -12,7 +12,13 @@ export const singleton = <Value>(name: string, valueFactory: () => Value): Value
 };
 
 // Hard-code a unique key, so we can look up the client when this module gets re-imported
-const prisma = singleton("prisma", () => new PrismaClient());
+const prisma = singleton(
+  "prisma",
+  () =>
+    new PrismaClient({
+      log: ["query", "info", "warn", "error"],
+    })
+);
 prisma.$connect();
 
 console.log("Database connected successfully.");

@@ -12,3 +12,39 @@ datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
+
+
+model admins {
+  id                    String @id @default(auto()) @map("_id") @db.ObjectId
+  username              String @unique
+  password              String
+}
+
+
+model Blogs {
+  id                    String    @id @default(auto()) @map("_id") @db.ObjectId
+  title                 String
+  shortDescription      String
+  body                  String
+  // slug                  String    @unique
+  slug                  String    @unique(map: "slug_case_insensitive") @db.String
+  featuredImage         String
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @default(now()) @updatedAt
+  views                 Int       @default(0)
+  seoTags               String[]
+  
+  // @@index([slug], map: "slug_case_insensitive", type: BTree)
+}
+
+
+model OtherPages {
+  // For Other pages like refunds, t&c etc....! just another blog
+  id                    String    @id @default(auto()) @map("_id") @db.ObjectId
+  name                  String    @unique
+  path                  String    @unique // Idea is to have a notion page with unique slug under root ('/') - Slug in terms of blogs
+  shortDescription      String
+  body                  String
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @default(now()) @updatedAt
+}

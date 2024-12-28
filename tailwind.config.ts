@@ -16,6 +16,7 @@ export default {
         primary: "#002d6b",
         primaryContrast: "#cad5e2",
         secondary: "#02818c",
+        secondaryContrast: "#394d6b",
         tertiary: "#ff3d3c",
         actionLinkGold: "#efc778",
         actionLinkBlue: "#0058ac",

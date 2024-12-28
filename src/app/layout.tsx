@@ -15,15 +15,18 @@ export const metadata: Metadata = {
 export default function RootLayout({
   header,
   children,
+  footer,
 }: Readonly<{
   children: React.ReactNode;
   header: React.ReactNode;
+  footer: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${libre_Baskerville.variable} ${raleway.variable} antialiased`}>
         {header}
         {children}
+        {footer}
       </body>
     </html>
   );

@@ -155,7 +155,13 @@ function Pricing() {
                 </div>
 
                 <div className="flex gap-6 mt-auto">
-                  <Button variant="outline" className="flex-1 font-semibold text-secondary">
+                  <Button
+                    variant="outline"
+                    className={cn(
+                      "flex-1 font-semibold text-secondary",
+                      offering.isRecommended && "bg-secondary/90 text-white"
+                    )}
+                  >
                     Start Now
                   </Button>
                 </div>

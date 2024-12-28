@@ -139,7 +139,7 @@ const DesktopMenu = () => (
       </NavigationMenuItem>
 
       <NavigationMenuItem>
-        <Link href="#" legacyBehavior passHref>
+        <Link href="/blogs" legacyBehavior passHref>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>Blog</NavigationMenuLink>
         </Link>
       </NavigationMenuItem>

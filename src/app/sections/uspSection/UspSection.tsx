@@ -112,23 +112,23 @@ function UspSection() {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 shadow-xl border-2 border-[#EFC788] bg-goldBg rounded-lg">
         <div className="p-8 flex items-center gap-3 lg:border-r-2 md:border-r-2 border-b-2 border-[#EFC788]">
           <CVFileIcon />
-          <p className="text-base font-primary font-semibold text-primary">Obtain a sample file within hours</p>
+          <p className="text-base font-primary font-bold text-primary">Obtain a sample file within hours</p>
         </div>
         <div className="p-8 flex items-center gap-3 lg:border-r-2 border-b-2 border-[#EFC788] ">
           <UnlimitedEdits />
-          <p className="text-base font-primary font-semibold text-primary">Unlimited editing before finalization</p>
+          <p className="text-base font-primary font-bold text-primary">Unlimited editing before finalization</p>
         </div>
         <div className="p-8 flex items-center gap-3 border-b-2 md:border-r-2 lg:border-r-0 border-[#EFC788]">
           <OneOnOneIcon />
-          <p className="text-base font-primary font-semibold text-primary">One-on-one consultation</p>
+          <p className="text-base font-primary font-bold text-primary">One-on-one consultation</p>
         </div>
         <div className="p-8 flex items-center gap-3 lg:border-r-2 border-b-2 lg:border-b-0 border-[#EFC788]">
           <BudgetFriedlyIcon />
-          <p className="text-base font-primary font-semibold text-primary">Budget friendly offers</p>
+          <p className="text-base font-primary font-bold text-primary">Budget friendly offers</p>
         </div>
         <div className="p-8 flex items-center gap-3 md:border-r-2 border-b-2 md:border-b-0 border-[#EFC788]">
           <EmergencyCVIcon />
-          <p className="text-base font-primary font-semibold text-primary">
+          <p className="text-base font-primary font-bold text-primary">
             Emergency services - Receive your ATS CV within 3 hours
             <a href="#footnote" className="inline hover:underline text-lg text-tertiary">
               *
@@ -137,7 +137,7 @@ function UspSection() {
         </div>
         <div className="p-8 flex items-center gap-3">
           <AtsScanIcon />
-          <p className="text-base font-primary font-semibold text-primary">Application Tracking System Friendly</p>
+          <p className="text-base font-primary font-bold text-primary">Application Tracking System Friendly</p>
         </div>
       </div>
     </section>

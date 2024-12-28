@@ -29,10 +29,11 @@ import { ColorSelector } from "./components/selectors/color-selector";
 const extensions = [...defaultExtensions, slashCommand];
 
 interface EditorProp {
+  isReadOnly?: boolean;
   initialValue?: JSONContent;
-  onChange: (value: JSONContent) => void;
+  onChange?: (value: JSONContent) => void;
 }
-const Editor = ({ initialValue, onChange }: EditorProp) => {
+const Editor = ({ initialValue, onChange, isReadOnly = false }: EditorProp) => {
   const [openNode, setOpenNode] = React.useState(false);
   const [openColor, setOpenColor] = React.useState(false);
   const [openLink, setOpenLink] = React.useState(false);
@@ -40,6 +41,7 @@ const Editor = ({ initialValue, onChange }: EditorProp) => {
   return (
     <EditorRoot>
       <EditorContent
+        editable={!isReadOnly}
         immediatelyRender={false}
         {...(initialValue && { initialContent: initialValue })}
         extensions={extensions}
@@ -50,11 +52,11 @@ const Editor = ({ initialValue, onChange }: EditorProp) => {
           handlePaste: (view, event) => handleImagePaste(view, event, uploadFn),
           handleDrop: (view, event, _slice, moved) => handleImageDrop(view, event, moved, uploadFn),
           attributes: {
-            class: `prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full`,
+            class: `prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full font-primary text-md`,
           },
         }}
         onUpdate={({ editor }) => {
-          onChange(editor.getJSON());
+          if (onChange) onChange(editor.getJSON());
         }}
         slotAfter={<ImageResizer />}
       >
