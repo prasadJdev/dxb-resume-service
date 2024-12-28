@@ -167,7 +167,7 @@ function AddBlogPage() {
                 name="shortDescription"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Short Description</FormLabel>
+                    <FormLabel>Meta Description</FormLabel>
                     <FormControl>
                       <Textarea
                         id="short-description"
@@ -178,7 +178,7 @@ function AddBlogPage() {
                       />
                     </FormControl>
                     <FormDescription className="text-[10px]">
-                      Short description of the blog{" "}
+                      Short description of the page{" "}
                       <code className="bg-slate-100 px-1 rounded-sm">
                         <b>(Max. length: 500)</b>
                       </code>

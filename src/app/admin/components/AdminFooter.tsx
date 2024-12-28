@@ -12,7 +12,7 @@ async function AdminFooter() {
   return (
     <section id="footer-links">
       <div className="flex justify-between">
-        <h2 className="text-2xl mb-4 font-bold text-center font-secondary text-primary">{`Footer Links - ${links.length}`}</h2>
+        <h2 className="text-2xl mb-4 font-bold text-center font-secondary text-secondary">{`Footer Links - ${links.length}`}</h2>
 
         <div className="flex gap-2">
           <SocialLinks />
@@ -31,15 +31,11 @@ async function AdminFooter() {
         {links.map((link) => (
           <div
             key={link.id}
-            className="p-4 flex flex-col gap-4 border border-[#d9d9d9] rounded-lg md:max-w-sm relative"
+            className="p-4 flex flex-col gap-4 border border-[#d9d9d9] rounded-lg md:max-w-sm relative min-h-[320px]"
           >
-            <div className="min-h-64 h-64 max-h-64 relative rounded-lg overflow-hidden">
-              {/* <Image src={blog.featuredImage} alt={blog.title} fill /> */}
-            </div>
-
             <h2 className="font-secondary text-2xl font-bold text-primary">{link.name}</h2>
 
-            <p className="truncate text-sm font-primary font-medium">{link.shortDescription}</p>
+            <p className="text-wrap text-sm font-primary font-medium flex-1">{link.shortDescription}</p>
 
             <div className="ml-auto flex gap-2">
               <EditLink slug={link.path} />

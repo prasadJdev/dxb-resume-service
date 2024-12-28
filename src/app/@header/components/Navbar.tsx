@@ -158,9 +158,9 @@ function Navbar() {
 
   return (
     <div className="flex justify-between p-4 md:p-[14px_80px] shadow-[0_2px_4px_rgba(0,0,0,0.12)] sticky top-0 bg-primary">
-      <div className="h-10 w-48 border border-dashed border-tertiary flex items-center justify-center">
+      <Link href="/" className="h-10 w-48 border border-dashed border-tertiary flex items-center justify-center">
         <span className="inline-block align-middle text-tertiary">Logo</span>
-      </div>
+      </Link>
 
       {isDesktop ? <DesktopMenu /> : <MobileMenu />}
     </div>

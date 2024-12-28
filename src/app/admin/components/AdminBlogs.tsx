@@ -13,7 +13,7 @@ async function AdminBlogs() {
   return (
     <section id="blogs">
       <div className="flex justify-between">
-        <h2 className="text-2xl mb-4 font-bold text-center font-secondary text-primary">{`Blogs - ${blogs.length}`}</h2>
+        <h2 className="text-2xl mb-4 font-bold text-center font-secondary text-secondary">{`Blogs - ${blogs.length}`}</h2>
 
         <div className="flex gap-2">
           <Link
