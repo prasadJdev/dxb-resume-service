@@ -37,7 +37,7 @@ const jsonContentSchema: z.ZodType<JSONContent> = z.lazy(() =>
 );
 
 const formSchema = z.object({
-  title: z.string().nonempty("Please enter Title of the Blog").max(25, "Title must be at most 25 characters long"),
+  title: z.string().nonempty("Please nter Title of the Blog").max(25, "Title must be at most 25 characters long"),
   shortDescription: z
     .string()
     .nonempty("Please add short description to the blog")
